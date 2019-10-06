@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{florian_mueller_cv}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Florian}{Müller}{ \urlstyle{same}\url{flomllr.com} | Github://flomllr | LinkedIn://flomllr \\
+\href{mailto:contact@flomllr.com}{contact@flomllr.com} | +49 152 2894 1252
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.29\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{NTU Singapore}
+\descript{BSc Informatics}
+\location{Exchange Semester}
+08/2018 - 12/2018
+\sectionsep
+
+\subsection{TU Munich}
+\descript{BSc Informatics}
+\location{Expected Grad. Feb 2020}
+Minor in Economics \\
+10/2016 - 02/2020
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Coursework
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\descript{NTU}
+Computer Vision, Advanced Algorithms, Artificial Intelligence\newline
+
+\descript{TUM}
+Deep Learning for Computer Vision, Numerical Programming, Databases, Software Engineering, Algorithms and Data Structures
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+
+\section{Skills}
+\descript{JavaScript, TypeScript, React, React Native, Node.js}
+Used for most side projects and at Accenture\newline
+
+\descript{Python, PyTorch, NumPy}
+Used in university project about deep learning on point clouds\newline
+
+\descript{Machine/Deep Learning}
+Stanford CS231n (remote), currently bachelor thesis about deep learning on point clouds \newline
+
+\descript{Java}
+University seminar, final grade A\newline
+
+\descript{Dart, Flutter}
+Fundamentals from project at Accenture\newline
+
+\descript{HTML5, CSS3, SASS}
+Started learning at age 14 and never stoped since then
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Clearcall}
+\descript{| Co-Founder, CTO }
+\location{Apr 2019 – present | Munich, Germany / Edinburgh, Scotland}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Co-founder of software startup, building a phone-based customer support solution for eCommerce companies \item Built dashboard using React (TypeScript) and GraphQL \item Recently launched the MVP with our first client (chinese eCommerce company with \$1M ARR), now handling ~1000 phone calls / month
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Accenture Technology}
+\descript{| Software engineer }
+\location{Apr 2019 – Sep 2019 | Munich, Germany}
+\begin{tightemize}\item Member of full stack team in Accenture's Liquid Studio \item Worked with Node.js and Firebase, as well as different frontend frameworks (Angular, React, Flutter) on two external projects \item Introduced unit tests to one Angular project, increased the code coverage from 0\% to 75\%
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Dcode}
+\descript{| Shopify app }
+\location{Oct 2018 – present | Munich, Germany }
+\begin{tightemize}
+\item Wrote a Shopify app using JavaScript, React and Node.js\item Currently over 900 active installations and ARR of 10.000€+ \item Managing one employee\end{tightemize}
+\sectionsep
+
+\runsubsection{AppliedAI}
+\descript{| Web Developer }
+\location{Mar 2018 – Jul 2018 | Munich, Germany }
+\begin{tightemize}
+\item Designed and implemented corporate website \item Worked on developing an internal platform for partners \end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+
+\runsubsection{Hack.Zurich}
+\descript{| Finalist, 2nd price Logitech challenge }
+\location{2019 | https://devpost.com/software/context-49dob3}
+\begin{tightemize}\item Built a macOS app to simplify window management for context changes using AppleScript, JavaScript and Electron
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Accenture Campus Innovation Challenge}
+\descript{| 1st place }
+\location{2018 | https://www.accenture.com/de-de/careers/campus-challenge}
+\begin{tightemize}\item Developed an app for AR glasses using speech-to-text transcription to add subtitles for deaf to the real world \item Overall winner in three rounds with competing teams from Germany, Austria and Switzerland
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Volunteering
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Volunteering}
+\runsubsection{Google Developers Student Club}
+\descript{| Core team member }
+\location{Sep 2019 – present | Munich, Germany }
+\begin{tightemize}
+\item Organizing tech workshops and events for students\end{tightemize}
+\sectionsep
+
+\runsubsection{Academy Consult e.V.}
+\descript{| Web development team leader}
+\location{Apr 2017 – Oct 2019 | Munich, Germany }
+\begin{tightemize}
+\item Designed + implemented corporate website (custom Wordpress theme) and internal mobile app (React Native)\item Implemented corporate website for Bube Concept GmbH in external project\end{tightemize}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}
